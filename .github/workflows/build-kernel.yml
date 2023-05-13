@@ -7,15 +7,15 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel Source'
         required: true
-        default: 'lyj-random/android_kernel_xiaomi_sm8350-Voyager'
+        default: 'lyj-random/android_kernel_xiaomi_sm8350'
       KERNEL_SOURCE_BRANCH:
         description: 'Branch'
         required: true
-        default: 'miui-t'
+        default: 'lineage-20'
       KERNEL_DEFCONFIG:
         description: 'Defconfig'
         required: true
-        default: 'star_defconfig'
+        default: 'gki_defconfig'
       TARGET_ARCH:
         description: 'Target ARCH'
         required: true
@@ -35,12 +35,12 @@ on:
       USE_KPROBES:
         description: 'Use Kprobes'
         required: false
-        default: 'true'
+        default: 'false'
         type: boolean
       USE_KERNELSU:
         description: 'Use KernelSU'
-        required: true
-        default: 'true'
+        required: false
+        default: 'false'
         type: boolean
       SSH:
         description: 'SSH connection to Actions'
